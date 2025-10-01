@@ -90,11 +90,11 @@ households_ix = num_attribs.index("households")
 num_pipeline = Pipeline([
     ("imputer", SimpleImputer(strategy="median")),
     ("attribs_adder", CombinedAttributesAdder(
-        rooms_ix=rooms_ix,
-        bedrooms_ix=bedrooms_ix,
-        population_ix=population_ix,
-        households_ix=households_ix,
-        add_bedrooms_per_room=True
+        #rooms_ix=rooms_ix,
+        #bedrooms_ix=bedrooms_ix,
+        #population_ix=population_ix,
+        #households_ix=households_ix,
+        #add_bedrooms_per_room=True
     )),
     ("scaler", StandardScaler()),
 ])
